@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col-sm-12 formColumn">
+        <div class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="onRewritePhone()">
+                            <span aria-hidden="true"><mat-icon aria-hidden="false" aria-label="Example home icon">chevron_left</mat-icon></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group" style="text-align: center;">
+                                <h1>رمز التحقيق</h1>
+                                <p>الرجاء إدخال رمز التحقيق الذي تلقيته من<br>
+                                البريد الإلكتروني Artna2021@gmail.com</p>
+                            </div>
+                            <div class="form-group numbers">
+                                <input type="text" class="form-control" maxlength="1"><input type="text" class="form-control" maxlength="1">
+                                <input type="text" class="form-control" maxlength="1"><input type="text" class="form-control" maxlength="1">
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-dark" type="button" (click)="onSubmit()">إرسال</button>
+                            </div>
+                            <div class="createAccount">
+                                <a href="">إعادة إرسال رمز التحقيق</a>
+                                <span>سيتم إرسال رمز التحقيق في خلال <span style="color: #81A18A;">1:30</span></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

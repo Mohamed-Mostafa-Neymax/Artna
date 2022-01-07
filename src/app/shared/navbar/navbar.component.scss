@@ -1,3 +1,9 @@
-@media only screen and (min-width: 991px) {
-    .artnaLogo { display: none !important; }
+nav {
+    height: 6%;
+    .navbar-brand { font-size: 2rem;}
+}
+@media only screen and (min-width: 991px) { .artnaLogo { display: none !important; } }
+@media only screen and (max-width: 991px) { 
+    .artnaLogoMenu { display: none !important; }
+    .nav-item { margin-top: 10px; }
 }

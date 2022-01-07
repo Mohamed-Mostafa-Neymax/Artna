@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-sm-6 formColumn">
+        <div class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+                            <div class="form-group">
+                                <input ngModel name="phone" type="text" class="form-control" placeholder="+20 | رقم الجوال">
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-dark" type="submit">تسجيل دخول</button>
+                            </div>
+                            <div class="createAccount"><span>ليس لديك حساب؟ <a [routerLink]="['/sign-up']">إنشاء
+                                        حساب</a></span></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 videoColumn">
+        <video controls preload="auto" poster="../../../../assets/Backgrounds/poster.png">
+            <source src="../../../../assets/videos/nature.mp4">
+        </video>
+    </div>
+</div>
