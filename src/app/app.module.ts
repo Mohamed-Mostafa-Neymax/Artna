@@ -9,11 +9,12 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { LogInComponent } from './components/log-in/log-in.component';
-import { PhoneNumberComponent } from './components/log-in/phone-number/phone-number.component';
+import { PhoneNumberArtistComponent } from './components/log-in/phone-number-artist/phone-number-artist.component';
 import { VerifyCodeComponent } from './components/log-in/verify-code/verify-code.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { SignArtistComponent } from './components/sign-up/sign-artist/sign-artist.component';
 import { SignClientComponent } from './components/sign-up/sign-client/sign-client.component';
+import { PhoneNumberClientComponent } from './components/log-in/phone-number-client/phone-number-client.component';
 
 
 @NgModule({
@@ -23,10 +24,11 @@ import { SignClientComponent } from './components/sign-up/sign-client/sign-clien
     FooterComponent,
     SignUpComponent,
     LogInComponent,
-    PhoneNumberComponent,
+    PhoneNumberArtistComponent,
     VerifyCodeComponent,
     SignArtistComponent,
-    SignClientComponent
+    SignClientComponent,
+    PhoneNumberClientComponent
   ],
   imports: [
     BrowserModule,

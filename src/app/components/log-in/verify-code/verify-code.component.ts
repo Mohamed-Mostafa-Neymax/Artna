@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,6 +7,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./verify-code.component.scss']
 })
 export class VerifyCodeComponent implements OnInit {
+
+  
 
   constructor( private router: Router ) { }
   ngOnInit(): void {

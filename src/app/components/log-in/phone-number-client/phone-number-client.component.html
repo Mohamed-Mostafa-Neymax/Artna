@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-sm-12 formColumn">
+        <div class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <form #authForm="ngForm" (ngSubmit)="onSubmitClient(authForm)">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">+20</span>
+                                    </div>
+                                    <input ngModel name="phone" minlength="10" required type="text" class="form-control" placeholder="رقم الجوال">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-dark" type="submit" [disabled]="authForm.invalid">تسجيل دخول</button>
+                            </div>
+                            <div class="createAccount"><span>ليس لديك حساب؟ <a [routerLink]="['/sign-up/sign-client']">إنشاء
+                                        حساب</a></span></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

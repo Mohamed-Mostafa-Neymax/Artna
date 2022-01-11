@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -8,10 +9,19 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
 
   toggleStatus = false;
+  // client True
+  // Artist False
+  userStatus = false;
 
-  constructor() { }
+  constructor( private router: Router) { }
   ngOnInit(): void {
     
+  }
+
+  onChangeUserStatus() {
+    this.userStatus = !this.userStatus;
+    if( !this.userStatus ) this.router.navigate(['/log-in/phone-number-client']);
+    else this.router.navigate(['/log-in/phone-number-artist']);
   }
 
   onToggleNav() {

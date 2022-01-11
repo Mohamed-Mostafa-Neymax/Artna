@@ -4,14 +4,19 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-body">
-                        <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+                        <form #authForm="ngForm" (ngSubmit)="onSubmitArtist(authForm)">
                             <div class="form-group">
-                                <input ngModel name="phone" type="text" class="form-control" placeholder="+20 | رقم الجوال">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">+20</span>
+                                    </div>
+                                    <input ngModel name="phone" minlength="10" required type="text" class="form-control" placeholder="رقم الجوال">
+                                </div>
                             </div>
                             <div class="form-group">
-                                <button class="btn btn-dark" type="submit">تسجيل دخول</button>
+                                <button class="btn btn-dark" type="submit" [disabled]="authForm.invalid">تسجيل دخول</button>
                             </div>
-                            <div class="createAccount"><span>ليس لديك حساب؟ <a [routerLink]="['/sign-up']">إنشاء
+                            <div class="createAccount"><span>ليس لديك حساب؟ <a [routerLink]="['/sign-up/sign-artist']">إنشاء
                                         حساب</a></span></div>
                         </form>
                     </div>
