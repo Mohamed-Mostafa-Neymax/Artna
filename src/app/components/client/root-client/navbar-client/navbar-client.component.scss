@@ -1,0 +1,48 @@
+@font-face {
+    font-family: CairoRegular;
+    src: url(../../../../../assets/Fonts/Cairo-Regular.ttf);
+}
+nav {
+    height: 6%;
+    font-family: CairoRegular;
+    color: #000;
+    .navbar-brand { font-size: 2rem; }
+    .artnaLogo { color: #000;}
+}
+.navbar-collapse {
+    z-index: 1;
+    background-color: #fff;
+    padding: 0px 20px;
+    .nav-item { a { color: #000;} }
+    form { a { color: #000;} }
+}
+@media only screen and (min-width: 991px) { .artnaLogo { display: none !important; } }
+@media only screen and (max-width: 991px) { 
+    .artnaLogoMenu { display: none !important; }
+    .nav-item { margin-top: 10px; }
+}
+
+
+
+
+// Shpping Cart Icon
+.badge {
+    padding-left: 9px;
+    padding-right: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+  }
+  
+  .label-warning[href],
+  .badge-warning[href] {
+    background-color: #c67605;
+  }
+  #lblCartCount {
+      font-size: 12px;
+      background: #ff0000;
+      color: #fff;
+      padding: 0 5px;
+      vertical-align: top;
+      margin-left: -10px; 
+  }

@@ -1,0 +1,62 @@
+@font-face {
+    font-family: CairoRegular;
+    src: url(../../../../assets/Fonts/Cairo-Regular.ttf);
+}
+@font-face {
+    font-family: CairoBold;
+    src: url(../../../../assets/Fonts/Cairo-Bold.ttf);
+}
+$fontColor: #000;
+@mixin brotherHood {
+    display: flex;
+    justify-content: space-between;
+}
+.row { 
+    margin: 0; height: 94%; 
+    .formColumn {
+        display: flex;
+        align-items: center;
+        background-image: url("../../../../assets/Backgrounds/verifyCode.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+.modal {
+    .modal-header {
+        border: none;
+        .close { margin: 0; padding: 0; }
+    }
+    .modal-body { 
+        padding: 1rem 2rem 2rem 2rem;
+        .numbers {
+            @include brotherHood;
+            .form-control {
+                width: 40px;
+                text-align: center;
+            }
+        }
+        
+    }
+    position: relative;
+    display: block;
+    height: fit-content;
+    font-family: CairoRegular;
+    form {
+        display: flex;
+        flex-direction: column;
+        button { background-color: $fontColor; color: #fff;width: 100%;}
+        input { background-color: #e9ecef; }
+        h1 { font-family: CairoBold; }
+        .createAccount {
+            @include brotherHood;
+            a { color: $fontColor; text-decoration: underline; }
+        }
+    }
+}
+@media only screen and (max-width: 375px) {
+    form {
+        span { font-size: 0.7rem; }
+        a { font-size: 0.7rem; }
+    }
+}

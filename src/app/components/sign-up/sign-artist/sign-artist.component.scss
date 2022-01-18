@@ -1,0 +1,45 @@
+@font-face {
+    font-family: CairoRegular;
+    src: url(../../../../assets/Fonts/Cairo-Regular.ttf);
+}
+$fontColor: #000;
+.row { 
+    margin: 0; height: 94%; 
+    .formColumn {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        background-image: url("../../../../assets/Backgrounds/covSignupArtist.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 0;
+    }
+    .videoColumn {
+        height: 100%;
+        padding: 0;
+        video {
+            object-fit: cover;
+            width: 100%; height: 100%;
+        }
+    }
+}
+.modal {
+    .modal-body { padding: 3rem 2rem; }
+    position: relative;
+    display: block;
+    height: fit-content;
+    font-family: CairoRegular;
+    form {
+        display: flex;
+        flex-direction: column;
+        button { width: 100%;}
+        span { font-size: 1rem; }
+        button { background-color: $fontColor; color: #fff;}
+        input { background-color: #e9ecef; direction: rtl;}
+        .checkInp { text-align: right; }
+        .createAccount { text-align: center;
+            a { color: $fontColor; text-decoration: underline; }
+        }
+    }
+}

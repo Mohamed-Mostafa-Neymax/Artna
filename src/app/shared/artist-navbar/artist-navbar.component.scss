@@ -1,0 +1,16 @@
+.text-end{
+    text-align: end;
+}
+.top-nav{
+    display: flex;
+    align-items: center;
+}
+h1{
+    font-size: 8em;
+    padding-bottom: 0.4em;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+.mat-h1, .mat-headline, .mat-typography h1 {
+    font: 400 24px/70px Roboto, "Helvetica Neue", sans-serif !important;
+}

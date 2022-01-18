@@ -1,0 +1,30 @@
+<!-- page-wrapper Start-->
+<div class="page-wrapper compact-wrapper" id="pageWrapper" style="height:100vh">
+    <!-- Page Header Start-->
+    <div class="page-header" style="height: 30vh;">
+     <app-artist-navbar></app-artist-navbar>
+     
+    </div>
+    <!-- Page Header Ends -->
+    <!-- Page Body Start-->
+    <div class="page-body-wrapper sidebar-icon" style="margin-bottom: 1em;">
+      <!-- Page Sidebar Start-->
+      <div class="sidebar-wrapper">
+        <app-artist-sidebar></app-artist-sidebar>
+      </div>
+      <!-- Page Sidebar Ends-->
+      <div class="page-body">
+        
+        <!-- Container-fluid starts-->
+        <div class="container-fluid">
+            <router-outlet></router-outlet>
+        </div>
+        <!-- Container-fluid Ends-->
+      </div>
+      <!-- footer start-->
+    </div>
+    <footer class="footer">
+        <app-footer></app-footer>
+      </footer>
+  </div>
+  

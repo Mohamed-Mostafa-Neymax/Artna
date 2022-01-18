@@ -1,0 +1,18 @@
+.allContent {
+    height: 100%;
+    app-footer {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+    }
+}
+.page-body{
+    width: calc(100% - 250px );
+    direction: rtl;
+    text-align: justify;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

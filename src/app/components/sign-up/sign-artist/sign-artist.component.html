@@ -1,0 +1,55 @@
+<div class="row">
+    <div class="col-sm-6 formColumn">
+        <div class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <form #authForm="ngForm" (ngSubmit)="onSubmitArtist(authForm)">
+                            <div class="form-group">
+                                <input ngModel name="name" required type="text" class="form-control" placeholder="الأسم">
+                            </div>
+                            <div class="form-group">
+                                <input ngModel name="email" required type="text" class="form-control" placeholder="البريد الألكتروني">
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">+20</span>
+                                    </div>
+                                    <input ngModel name="phone" minlength="10" required type="text" class="form-control" placeholder="رقم الجوال">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1"><mat-icon aria-hidden="false" aria-label="Example home icon">location_on</mat-icon></span>
+                                    </div>
+                                    <input ngModel name="phone" minlength="10" required type="text" class="form-control" placeholder="الموقع علي الخريطة">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input ngModel name="bankAccount" required type="text" class="form-control" placeholder="رقم الحساب البنكي">
+                            </div>
+                            <div class="form-group">
+                                <input ngModel name="bankName" required type="text" class="form-control" placeholder="اسم البنك">
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-dark" type="submit" [disabled]="authForm.invalid">تسجيل دخول</button>
+                            </div>
+                            <div class="form-group checkInp">
+                                <span>الموافقة علي الشروط والأحكام</span>&nbsp;<input type="checkbox" aria-label="Checkbox for following text input">
+                            </div>
+                            <div class="createAccount"><span>هل لديك حساب؟ <a [routerLink]="['/log-in/phone-number-artist']">تسجيل حساب</a></span></div>
+                                        
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 videoColumn">
+        <video controls preload="auto" poster="../../../../assets/Backgrounds/poster.png">
+            <source src="../../../../assets/videos/nature.mp4">
+        </video>
+    </div>
+</div>
